@@ -4,9 +4,41 @@
     {
         static void Main(string[] args)
         {
+            int vibor;
+            double chislo_A = 0, chislo_B = 0;
+            do
+            {
+                Console.WriteLine("Сделайте выбор");
+                Console.WriteLine("--------------------");
+                Console.WriteLine("1 - Ввести число А");
+                Console.WriteLine("2 - Ввести число В");
+                Console.WriteLine("3 - Сложение(А + В)");
+                Console.WriteLine("4 - Разность(А - В)");
+                Console.WriteLine("5 - Произведение(А * В)");
+                Console.WriteLine("6 - Частное(А / В)");
+                Console.WriteLine("0 - Выход");
+                Console.WriteLine("--------------------");
+                Console.WriteLine("Ваш выбор: ");
+                vibor = Convert.ToInt32(Console.ReadLine());
 
+                if (vibor == 1)
+                    chislo_A = Input_A();
+                if (vibor == 2)
+                    chislo_B = Input_B();
+                if (vibor == 3)
+                    Add(chislo_A, chislo_B);
+                if (vibor == 4)
+                    Sub(chislo_A, chislo_B);
+                if (vibor == 5)
+                    Mul(chislo_A, chislo_B);
+                if (vibor == 6)
+                    Div(chislo_A, chislo_B);
+                if (vibor == 0)
+                    Console.WriteLine("Завершение работы");
+
+            } while (vibor != 0);
         }
-        static void Add(double number1, double number2)
+    static void Add(double number1, double number2)
         {
             double sum = 0;
             sum = number1 + number2;

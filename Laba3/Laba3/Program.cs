@@ -45,5 +45,12 @@
 
             return number_A;
         }
+        static double Input_B()
+        {
+            Console.WriteLine("число В = ");
+            double number_B = Convert.ToDouble(Console.ReadLine());
+
+            return number_B;
+        }
     }
 }

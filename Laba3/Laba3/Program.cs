@@ -37,5 +37,13 @@
             else
                 Console.WriteLine("Поменяйте значение числа В");
         }
+        static double Input_A()
+        {
+
+            Console.WriteLine("число А = ");
+            double number_A = Convert.ToDouble(Console.ReadLine());
+
+            return number_A;
+        }
     }
 }

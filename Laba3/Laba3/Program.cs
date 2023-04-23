@@ -7,6 +7,7 @@
 
         }
 
+
         static void Add(double number1, double number2)
         {
             double sum = 0;
@@ -18,6 +19,13 @@
             double sub = 0;
             sub = number1 - number2;
             Console.WriteLine("Разность чисел = " + sub);
+
+        }
+        static void Mul(double number1, double number2)
+        {
+            double mul = 0;
+            mul = number1 * number2;
+            Console.WriteLine("Произведение чисел = " + mul);
 
         }
     }
